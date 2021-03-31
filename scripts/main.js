@@ -1,6 +1,40 @@
 const loadData = heroes => {
     console.log(heroes)
-}
+};
+
+const search = document.getElementById('search');
+const matchList = document.getElementById('match-list');
+
+const searchStates = async searchText => {
+    const res = await fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json');
+    const states = await res.json();
+
+    let matches = states.filter(state => {
+        const regex = new RegExp(`^${searchText}`, 'gi');
+        return state.name.match(regex);
+    });
+
+    if (searchText.length === 0) {
+        matches = [];
+        matchList.innerHTML = '';
+    };
+
+    outputHtml(matches);
+};
+
+const outputHtml = matches => {
+    if (matches.length > 0) {
+        const html = matches.map(match => `
+            <div class="match-list>
+                <h4>${match.name}</h4>
+        `).join('');
+        matchList.innerHTML = html;
+        console.log(html);
+    };
+};
+
+search.addEventListener('input', () => searchStates(search.value));
+
 
 fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
     res.json().then(data => {
