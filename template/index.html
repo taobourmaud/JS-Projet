@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src='../scripts/main.js'></script>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
     <title>Super Héros</title>
 </head>
+
 <body>
-    
+    <h1>Caractéristique des Héros</h1>
+    <div class="form-group">
+        <input type="text" id="search" class="form-control form-control-lg" placeholder="Votre recherche ici !">
+    </div>
+    <div id="match-list">
+
+    </div>
+    <table class="table-heroes">
+        <thead>
+            <tr>
+                <th scope="col">ICON : </th>
+                <th scope="col">NAME : </th>
+                <th scope="col">FULLNAME : </th>
+                <th scope="col">INTELLIGENCE : </th>
+                <th scope="col">STRENGTH : </th>
+                <th scope="col">SPEED : </th>
+                <th scope="col">DURABILITY :</th>
+                <th scope="col">POWER : </th>
+                <th scope="col">COMBAT : </th>
+                <th scope="col">PLACE OF BIRTH :</th>
+                <th scope="col">ALIGNEMENT :</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+
+
+    <script src="../scripts/main.js"></script>
 </body>
+
 </html>
