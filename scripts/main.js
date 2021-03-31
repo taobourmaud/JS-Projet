@@ -43,7 +43,7 @@ fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then
             var temp = "";
             data.forEach((u) => {
                 temp += "<tr>";
-                temp += "<td>" + u.images.xs + "</td>";
+                temp += "<td>" + "<img src="+ u.images.xs+">" + "</td>";
                 temp += "<td>" + u.name + "</td>";
                 temp += "<td>" + u.biography.fullName + "</td>";
                 temp += "<td>" + u.powerstats.intelligence + "</td>";

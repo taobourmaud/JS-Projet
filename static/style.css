@@ -8,3 +8,8 @@ tbody {
     background-color: #CCEF2D;
     color : black;
 }
+
+td {
+    vertical-align: bottom;
+    text-align: center;
+}
