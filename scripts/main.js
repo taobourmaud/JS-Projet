@@ -3,40 +3,48 @@ const loadData = heroes => {
     console.log(heroes)
 };
 
-// PART OF SEARCH SYSTEM
-const search = document.getElementById('search');
-const matchList = document.getElementById('match-list');
+// SEARCH SYSTEM
 
-const searchStates = async searchText => {
-    const res = await fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json');
-    const states = await res.json();
+const charactersList = document.getElementById('match-list');
+const searchBar = document.getElementById('search');
+let hpCharacters = [];
 
-    let matches = states.filter(state => {
-        const regex = new RegExp(`^${searchText}`, 'gi');
-        return state.name.match(regex);
+
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
+
+    const filteredCharacters = hpCharacters.filter((character) => {
+        return (
+            character.name.toLowerCase().includes(searchString)
+        );
     });
+    displayCharacters(filteredCharacters);
+});
 
-    if (searchText.length === 0) {
-        matches = [];
-        matchList.innerHTML = '';
-    };
-
-    outputHtml(matches);
+const loadCharacters = async() => {
+    try {
+        const res = await fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json');
+        hpCharacters = await res.json();
+        displayCharacters(hpCharacters);
+    } catch (err) {
+        console.error(err);
+    }
 };
 
-// PRINT THE MATCHES OF SEARCH IN THE HTML
-const outputHtml = matches => {
-    if (matches.length > 0) {
-        const html = matches.map(match => `
-            <div class="match-list>
-                <h4>${match.name}</h4>
-        `).join('');
-        matchList.innerHTML = html;
-        console.log(html);
-    };
+const displayCharacters = (characters) => {
+    const htmlString = characters
+        .map((character) => {
+            return `
+            <li class="character">
+                <h2>${character.name}</h2>
+            </li>
+        `;
+        })
+        .join('');
+    charactersList.innerHTML = htmlString;
 };
 
-search.addEventListener('input', () => searchStates(search.value));
+loadCharacters();
 
 // SORT SYSTEM
 
