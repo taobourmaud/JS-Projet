@@ -1,0 +1,15 @@
+thead,
+tfoot {
+    background-color: #3f87a6;
+    color: white;
+}
+
+tbody {
+    background-color: #CCEF2D;
+    color : black;
+}
+
+td {
+    vertical-align: bottom;
+    text-align: center;
+}
