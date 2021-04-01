@@ -1,9 +1,7 @@
-// LOAD DATA OF HEROES
 const loadData = heroes => {
     console.log(heroes)
 };
 
-// PART OF SEARCH SYSTEM
 const search = document.getElementById('search');
 const matchList = document.getElementById('match-list');
 
@@ -24,7 +22,6 @@ const searchStates = async searchText => {
     outputHtml(matches);
 };
 
-// PRINT THE MATCHES OF SEARCH IN THE HTML
 const outputHtml = matches => {
     if (matches.length > 0) {
         const html = matches.map(match => `
@@ -38,9 +35,7 @@ const outputHtml = matches => {
 
 search.addEventListener('input', () => searchStates(search.value));
 
-// SORT SYSTEM
 
-// DISPLAYING JSON DATA
 fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
     res.json().then(data => {
         console.log(data);
@@ -48,7 +43,7 @@ fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then
             var temp = "";
             data.forEach((u) => {
                 temp += "<tr>";
-                temp += "<td>" + "<img src=" + u.images.xs + ">" + "</td>";
+                temp += "<td>" + "<img src="+ u.images.xs+">" + "</td>";
                 temp += "<td>" + u.name + "</td>";
                 temp += "<td>" + u.biography.fullName + "</td>";
                 temp += "<td>" + u.powerstats.intelligence + "</td>";
