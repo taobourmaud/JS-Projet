@@ -9,12 +9,12 @@
     <title>Super Héros</title>
 </head>
 
-<body>
+<body onload="SizeDefault()">
     <h1>Caractéristique des Héros</h1>
     <div id="ResultSize">
         <label>Choisir le nombre de résultats sur la page : </label>
         <select onchange="SizePage()" name="size" id="ChooserSize">
-            <option value="-1">All Results</option>
+            <option value="Infinity">All Results</option>
             <option value="10">10</option>
             <option value="20" selected>20</option>
             <option value="50">50</option>
