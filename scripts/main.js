@@ -5,6 +5,8 @@ const loadData = heroes => {
 const search = document.getElementById('search');
 const matchList = document.getElementById('match-list');
 
+
+
 const searchStates = async searchText => {
     const res = await fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json');
     const states = await res.json();
@@ -18,12 +20,11 @@ const searchStates = async searchText => {
         matches = [];
         matchList.innerHTML = '';
     };
-
     outputHtml(matches);
 };
 
 const outputHtml = matches => {
-    if (matches.length > 0) {
+    if (matches.length >= 0) {
         const html = matches.map(match => `
             <div class="match-list>
                 <h4>${match.name}</h4>
@@ -33,8 +34,33 @@ const outputHtml = matches => {
     };
 };
 
-search.addEventListener('input', () => searchStates(search.value));
+function test() {
+    const tbody = document.querySelector('tbody');
+    //const thx = document.querySelectorAll('th');
+    const trxb = tbody.querySelectorAll('tr');
+    let shouldSwitch, element, nextElement, index
+    let click = true
+    while (click) {
+        click = false
+        for (index = 0; index < (trxb.length - 1); index++) {
+            shouldSwitch = false
 
+            element = trxb[index].getElementsByTagName("TD")[index];
+            nextElement = trxb[index + 1].getElementsByTagName("TD")[index];
+            
+            if (element.innerHTML.toLowerCase() > nextElement.innerHTML.toLowerCase()) {
+                shouldSwitch = true;
+                break;
+              }
+        }
+        if (shouldSwitch) {
+            trxb[index].parentNode.insertBefore(trxb[index + 1], trxb[index]);
+            switching = true;
+          }
+    }
+}
+
+search.addEventListener('input', () => searchStates(search.value));
 
 fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
     res.json().then(data => {
