@@ -1,9 +1,20 @@
-body {
-    background-image: url("./Images/background.jpg");
-    background-size: cover;
+thead,
+tfoot {
+    background-color: #3f87a6;
+    color: white;
 }
 
-h1 {
-    color: wheat;
-    width: auto;
+tbody {
+    background-color: #CCEF2D;
+    color : black;
+}
+
+td {
+    vertical-align: bottom;
+    text-align: center;
+}
+
+#ResultSize {
+    display: flex;
+    justify-content: center;
 }
