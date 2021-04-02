@@ -10,7 +10,7 @@ const searchStates = async searchText => {
     const states = await res.json();
 
     let matches = states.filter(state => {
-        const regex = new RegExp(`^${searchText}`, 'gi');
+        const regex = new RegExp(`${searchText}`, 'gi');
         return state.name.match(regex);
     });
 
@@ -25,8 +25,9 @@ const searchStates = async searchText => {
 const outputHtml = matches => {
     if (matches.length > 0) {
         const html = matches.map(match => `
-            <div class="match-list>
+            <div class="match-list">
                 <h4>${match.name}</h4>
+                </div>
         `).join('');
         matchList.innerHTML = html;
         console.log(html);
@@ -43,7 +44,7 @@ fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then
             var temp = "";
             data.forEach((u) => {
                 temp += "<tr>";
-                temp += "<td>" + "<img src="+ u.images.xs+">" + "</td>";
+                temp += "<td>" + "<img src=" + u.images.xs + ">" + "</td>";
                 temp += "<td>" + u.name + "</td>";
                 temp += "<td>" + u.biography.fullName + "</td>";
                 temp += "<td>" + u.powerstats.intelligence + "</td>";
