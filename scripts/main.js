@@ -85,7 +85,6 @@ const loadCharacters = async() => {
     try {
         const res = await fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json');
         hpCharacters = await res.json();
-        displayCharacters(hpCharacters);
     } catch (err) {
         console.error(err);
     }
@@ -98,7 +97,6 @@ loadCharacters();
 // DISPLAYING JSON DATA
 fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
     res.json().then(data => {
-        console.log(data);
         if (data.length > 0) {
             var temp = "";
             data.forEach((u) => {
@@ -128,7 +126,6 @@ function SizeDefault() {
     console.log("je refresh à chaque fois miskine")
     fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
         res.json().then(data => {
-            console.log(data);
             if (data.length > 0) {
                 var temp = "";
                 data.forEach((u) => {
