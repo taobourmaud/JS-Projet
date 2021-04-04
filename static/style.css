@@ -13,3 +13,8 @@ td {
     vertical-align: bottom;
     text-align: center;
 }
+
+#ResultSize {
+    display: flex;
+    justify-content: center;
+}
