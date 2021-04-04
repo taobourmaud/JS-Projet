@@ -5,16 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link href="../static/style.css" rel="stylesheet">
     <title>Super Héros</title>
 </head>
 
-<body>
+<body onload="SizeDefault()">
     <h1>Caractéristique des Héros</h1>
+    <div id="ResultSize">
+        <label>Choisir le nombre de résultats sur la page : </label>
+        <select onchange="SizePage()" name="size" id="ChooserSize">
+            <option value="Infinity">All Results</option>
+            <option value="10">10</option>
+            <option value="20" selected>20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </div>
     <div class="form-group">
         <input type="text" id="search" class="form-control form-control-lg" placeholder="Votre recherche ici !">
     </div>
-    <ul id="match-list"></ul>
+    <div id="match-list">
+
+    </div>
     <table class="table-heroes">
         <thead>
             <tr>
