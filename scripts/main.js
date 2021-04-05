@@ -113,3 +113,8 @@ function SizeDefault() {
     })
 }
 
+
+// let a = 50
+// let b = 117
+// let test = Math.round(b/a)
+// console.log(test)
