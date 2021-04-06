@@ -3,7 +3,7 @@ const loadData = heroes => {
     console.log(heroes)
 };
 
-// Animation
+// Animation (easteregg)
 function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -160,7 +160,6 @@ const loadCharacters = async() => {
 
 loadCharacters();
 
-// SORT SYSTEM
 
 // DISPLAYING JSON DATA
 fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
