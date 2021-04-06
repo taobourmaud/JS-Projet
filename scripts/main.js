@@ -77,21 +77,20 @@ const charactersList = document.getElementById('match-list');
 const searchBar = document.getElementById('search');
 let hpCharacters = [];
 
-let sizepage = 0
+let sizepage = 0  // initialisation de 3 variables pour bien gèrer la taille des pages.
 let i = 1
 let temp = ""
 
-function SizePage() {
+function SizePage() {    // fonction changeant la taille dès que le select est modifié.
     sizepage = 0
     i = 1
-    console.log(sizepage)
-    const e = document.getElementById("ChooserSize");
+    const e = document.getElementById("ChooserSize");    // on récupère la valeur du select.
     sizepage = e.options[e.selectedIndex].value
     fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
         res.json().then(data => {
             if (data.length > 0) {
                 temp = "";
-                data.forEach((u) => {
+                data.forEach((u) => {    // on parcourt data qui est le fichier JSON en gros.
                     if (i <= sizepage) {
                         i++
                         temp += "<tr>";
@@ -113,10 +112,9 @@ function SizePage() {
                     }
                 })
             }
-            document.getElementById("data").innerHTML = temp;
+            document.getElementById("data").innerHTML = temp;   // On écrit sur le HTML la variable temp qui contient le tableau à mettre écrit déjà en HTML
         })
     })
-    console.log(sizepage)
 }
 
 searchBar.addEventListener('keyup', (e) => {
@@ -189,6 +187,8 @@ fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then
         }
     })
 })
+
+// Fonction pour que la page soit de taille 20 par défault.
 
 function SizeDefault() {
     console.log("je refresh à chaque fois miskine")
