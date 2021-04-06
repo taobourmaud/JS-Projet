@@ -4,11 +4,10 @@ Travail de groupe :  Tao/Elouan/Kévin/Mathis
 Le lien du github de notre projet : https://github.com/taobourmaud/JS-Projet
 
 
-Si tu peux faire un Sommaire ici avec genre tu sais des liens qui ramène pile à l'endroit ou tu veux genre un lien pour "Son utilisation" et ça t'amènes plus bas.
-
 1) [Le projet](#projet)
 2) [Son fonctionnement](#fonctionnement)
 3) [Son utilisation](#utilisation)
+
 
 ## Le projet : <a id="projet"></a>
 
