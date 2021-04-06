@@ -6,7 +6,7 @@ Le lien du github de notre projet : https://github.com/taobourmaud/JS-Projet
 
 Si tu peux faire un Sommaire ici avec genre tu sais des liens qui ramène pile à l'endroit ou tu veux genre un lien pour "Son utilisation" et ça t'amènes plus bas.
 
-[test](##Son utilisation :)
+[test](#utilisation)
 
 ## Le projet :
 
@@ -28,7 +28,7 @@ C'est un travail de groupe dans lequel nous avons dû coder en JavaScript, en HT
 Notre site est créé de manière ergonomique et simple à prendre en main. En effet, pour ne pas surcharger les personnes avec un matèriel peu performant, nous avons mis en place une selection pour changer la taille de la page comme voici ci-dessous : 
 ![image](https://cdn.discordapp.com/attachments/408320873876160522/829029174646800454/unknown.png)
 
-## Son utilisation :
+## Son utilisation : <a id="utilisation"></a>
 
 Une fois arrivé sur le site, vous pouvez comme bon vous semble monter et descendre dans la liste des super héros et vilains et connaitre leurs caractéristiques.
 
