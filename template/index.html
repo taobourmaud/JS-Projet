@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../static/style.css" rel="stylesheet">
-    <title>Super Héros</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Confidential</title>
 </head>
 
 <body onload="SizeDefault()">
-    <h1>Caractéristique des Héros</h1>
-    <div id="ResultSize">
-        <label>Choisir le nombre de résultats sur la page : </label>
+    <h1>DATABASE</h1>
+    <div class="result-size" id="ResultSize">
+        <label>Choose the number of the results on the page : </label>
         <select onchange="SizePage()" name="size" id="ChooserSize">
             <option value="Infinity">All Results</option>
             <option value="10">10</option>
@@ -22,32 +23,32 @@
         </select>
     </div>
     <div class="form-group">
-        <input type="text" id="search" class="form-control form-control-lg" placeholder="Votre recherche ici !">
+        <input type="text" id="search" class="form-control form-control-lg" placeholder="DATABASE SEARCH">
     </div>
     <div id="match-list">
 
     </div>
-    <table class="table-heroes">
+    <table class="table-heroes" cellpadding="0" cellspacing="0" border="0">
         <thead>
             <tr>
-                <th scope="col">ICON : </th>
-                <th scope="col">NAME : </th>
-                <th scope="col">FULLNAME : </th>
-                <th scope="col">INTELLIGENCE : </th>
-                <th scope="col">STRENGTH : </th>
-                <th scope="col">SPEED : </th>
-                <th scope="col">DURABILITY :</th>
-                <th scope="col">POWER : </th>
-                <th scope="col">COMBAT : </th>
-                <th scope="col">RACE : </th>
-                <th scope="col">GENDER : </th>
-                <th scope="col">HEIGHT : </th>
-                <th scope="col">WEIGHT :</th>
-                <th scope="col">PLACE OF BIRTH :</th>
-                <th scope="col">ALIGNEMENT :</th>
+                <th scope="col">ICON</th>
+                <th scope="col">NAME</th>
+                <th scope="col">FULLNAME</th>
+                <th scope="col">INTELLIGENCE</th>
+                <th scope="col">STRENGTH</th>
+                <th scope="col">SPEED</th>
+                <th scope="col">DURABILITY</th>
+                <th scope="col">POWER</th>
+                <th scope="col">COMBAT</th>
+                <th scope="col">RACE</th>
+                <th scope="col">GENDER</th>
+                <th scope="col">HEIGHT</th>
+                <th scope="col">WEIGHT</th>
+                <th scope="col">PLACE OF BIRTH</th>
+                <th scope="col">ALIGNEMENT</th>
             </tr>
         </thead>
-        <tbody id="data">
+        <tbody class="table-content" id="data">
 
         </tbody>
     </table>
