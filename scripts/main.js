@@ -48,33 +48,20 @@ function item(c) {
 
 function sort(indexOfRow) {
     const tbody = document.querySelector('tbody');
-    //const thx = document.querySelectorAll('th');
     const trxb = tbody.querySelectorAll('tr');
-    let shouldSwitch, element, nextElement, index
-    let tableau = new Array()
-    for (index = 0; index < (trxb.length - 1); index++) {
-        tableau.push(trxb[index].querySelectorAll("TD")[indexOfRow].innerHTML)
-        tableau.sort()
-        for(let i in trxb[index].querySelectorAll("TD")) {
-            trxb[index].querySelectorAll("TD")[indexOfRow].innerHTML = tableau[i]
 
-        }
-        
-        /*shouldSwitch = false
-        
-        element = trxb[index].getElementsByTagName("TD")[indexOfRow];
-        nextElement = trxb[index + 1].getElementsByTagName("TD")[indexOfRow];
-            
-        if (element.innerHTML.toLowerCase() > nextElement.innerHTML.toLowerCase()) {
-            shouldSwitch = true;
-            break;
-        }*/
+    let index
+    let tableau = new Array()
+
+    for (index = 0; index < (trxb.length); index++) {
+        tableau.push(trxb[index].querySelectorAll("TD")[indexOfRow].innerHTML)
+
+        var collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+        tableau.sort(collator.compare)
     }
     
     console.log(tableau)
-    /*if (shouldSwitch) {
-    trxb[index].parentNode.insertBefore(trxb[index + 1], trxb[index]);
-    }*/
+
 }
 
 
