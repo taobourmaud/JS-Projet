@@ -33,9 +33,9 @@ C'est un travail de groupe dans lequel nous avons dû coder en JavaScript, en HT
 ## Son intérêt : <a id="interet"></a>
 
 
-Lorsqu'on a des plans à comploter en tant que vilain, on ne peut pas se permettre de perdre son temps à espionner son ennemie juré, à guêter pour ses faiblesses! Ce site permet de remédier a cette entrave, et fait gagner beaucoup de temps à nous autres, vilains. Il nous permet de connaitre plein de choses sur les héros et vilains de ce monde: leur force, leur intelligence, leur photo, leur réelle identité, leur race, leur gabarit, et même leur lieu de naissance !
-Cependant, il est possible que vous ne vous intéressiez pas à une personne en particulier. Dans ce cas, vous pourrez cherchez par ordre croissant ou décroissant, en fonction de la statistique voulue: si vous voulez savoir qui est le plus intelligent, on encore qui est le plus faible?
-De plus, si vous souhaitez vous préparer au combat, mais que vous avez besoin d'alliés adaptés a la situation, et bien vous pouvez faire exactement la même chose, mais en recherchant des méchants, pour ainsi travailler avec les plus efficaces d'entre eux qui ont un intérêt commun avec vous !
+Lorsqu'on a des plans à comploter en tant que vilain, on ne peut pas se permettre de perdre son temps à espionner son ennemie juré, à guêter pour ses faiblesses! Ce site permet de remédier à cette entrave, et fait gagner beaucoup de temps à nous autres, vilains. Il nous permet de connaitre plein de choses sur les héros et vilains de ce monde: leurs forces, leurs intelligences, leurs photos, leurs réelles identités, leurs races, leurs gabarits, et même leurs lieux de naissance !
+Cependant, il est possible que vous ne vous intéressiez pas à une personne en particulier. Dans ce cas, vous pourrez chercher par ordre croissant ou décroissant, en fonction de la statistique voulue: si vous voulez savoir qui est le plus intelligent, on encore qui est le plus faible?
+De plus, si vous souhaitez vous préparer au combat, mais que vous avez besoin d'alliés adaptés à la situation, et bien vous pouvez faire exactement la même chose, mais en recherchant des méchants, pour ainsi travailler avec les plus efficaces d'entre eux qui ont un intérêt commun avec vous !
 
 
 ## Son fonctionnement : <a id="fonctionnement"></a>
