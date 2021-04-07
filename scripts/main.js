@@ -77,7 +77,7 @@ const charactersList = document.getElementById('match-list');
 const searchBar = document.getElementById('search');
 let hpCharacters = [];
 
-let sizepage = 0 // initialisation de 3 variables pour bien gèrer la taille des pages.
+let sizePage = 0 // initialisation de 3 variables pour bien gèrer la taille des pages.
 let i = 1
 let temp = ""
 
@@ -85,13 +85,13 @@ function SizePage() { // fonction changeant la taille dès que le select est mod
     sizepage = 0 // on redéclare ses 2 variables pour qu'à chaque fois que le Select est modifié on est pas d'erreur.
     i = 1
     const e = document.getElementById("ChooserSize"); // on récupère la valeur du select.
-    sizepage = e.options[e.selectedIndex].value
+    sizePage = e.options[e.selectedIndex].value
     fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
         res.json().then(data => {
             if (data.length > 0) {
                 temp = "";
                 data.forEach((u) => { // on parcourt data qui est la variables contenant le fichier JSON
-                    if (i <= sizepage) { // On va effectuer la suite seulement le nombre de fois que l'on veut, c'est à dire par rapport à ce qui est choisi pour le select.
+                    if (i <= sizePage) { // On va effectuer la suite seulement le nombre de fois que l'on veut, c'est à dire par rapport à ce qui est choisi pour le select.
                         i++
                         temp += "<tr>";
                         temp += "<td>" + "<img src=" + u.images.xs + ">" + "</td>";
