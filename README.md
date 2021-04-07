@@ -8,9 +8,8 @@ Le lien du github de notre projet : https://github.com/taobourmaud/JS-Projet
 
 1) [Le projet](#projet)
 2) [Son intérêt](#interet)
-2) [Son fonctionnement](#fonctionnement)
 3) [Son utilisation](#utilisation)
-
+4) [Ce qu'on aurait pu améliorer](#ameliorer)
 
 
 ## Le projet : <a id="projet"></a>
@@ -33,22 +32,41 @@ C'est un travail de groupe dans lequel nous avons dû coder en JavaScript, en HT
 ## Son intérêt : <a id="interet"></a>
 
 
-Lorsqu'on a des plans à comploter en tant que vilain, on ne peut pas se permettre de perdre son temps à espionner son ennemie juré, à guêter pour ses faiblesses! Ce site permet de remédier à cette entrave, et fait gagner beaucoup de temps à nous autres, vilains. Il nous permet de connaitre plein de choses sur les héros et vilains de ce monde: leurs forces, leurs intelligences, leurs photos, leurs réelles identités, leurs races, leurs gabarits, et même leurs lieux de naissance !
+Lorsqu'on a des plans à comploter en tant que vilain, on ne peut pas se permettre de perdre son temps à espionner son ennemie juré, à guêter pour ses faiblesses! Ce site permet de remédier à cette entrave, et fait gagner beaucoup de temps à nous autres, vilains. Il nous permet de connaitre plein de choses sur les héros et vilains de ce monde: leur force, leur intelligence, leur photo, leur réelle identité, leur race, leur gabarit, et même leur lieu de naissance !
 Cependant, il est possible que vous ne vous intéressiez pas à une personne en particulier. Dans ce cas, vous pourrez chercher par ordre croissant ou décroissant, en fonction de la statistique voulue: si vous voulez savoir qui est le plus intelligent, on encore qui est le plus faible?
 De plus, si vous souhaitez vous préparer au combat, mais que vous avez besoin d'alliés adaptés à la situation, et bien vous pouvez faire exactement la même chose, mais en recherchant des méchants, pour ainsi travailler avec les plus efficaces d'entre eux qui ont un intérêt commun avec vous !
-
-
-## Son fonctionnement : <a id="fonctionnement"></a>
-
-Notre site est créé de manière ergonomique et simple à prendre en main. En effet, pour ne pas surcharger les personnes avec un matèriel peu performant, nous avons mis en place une selection pour changer la taille de la page comme voici ci-dessous : 
-![Page Size](static/Images/SizeChoose.PNG)
 
 
 ## Son utilisation : <a id="utilisation"></a>
 
 
+Notre site est créé de manière ergonomique et simple à prendre en main.
+
 Une fois arrivé sur le site, vous pouvez comme bon vous semble monter et descendre dans la liste des super héros et vilains et connaitre leurs caractéristiques.
+![image](https://media.discordapp.net/attachments/408320873876160522/829390676121616384/unknown.png?width=1366&height=670)
 
-En revanche, si vous souhaitez faire des recherches plus ciblés, cliquez sur le bouton à droite de "Choisir le nombre de résultats sur la page :"; et sélectionnez le nombre de résultats voulus.
+En revanche, si vous souhaitez faire des recherches plus ciblés, cliquez sur le bouton à droite de "Choisir le nombre de résultats sur la page :"; et sélectionnez le nombre de résultats voulus:
 
-Ensuite, taper les premières lettres (ou le nom complet) du personnage sur lequel vous souhaitez en apprendre plus.
+![Page Size](static/Images/unknown.png)
+
+Ensuite, taper les premières lettres (ou le nom complet) du personnage sur lequel vous souhaitez en apprendre plus:
+![image](https://media.discordapp.net/attachments/408320873876160522/829392050461868042/image0.png)
+
+Et voila, vous avez maintenant toute les informations que vous désirez !
+
+![image](https://media.discordapp.net/attachments/408320873876160522/829392426833412126/unknown.png?width=1440&height=140)
+
+ (sauf apparement la race de Chuck Norris, que personne connait à ce jour)
+
+
+## Ce qu'on aurait pu améliorer : <a id="ameliorer"></a>
+
+Avec plus de temps, on aurait pu améliorer
+
+-notre fonction sort
+
+-la pagination (la créer pour le coup)
+
+-rajouter des personnages
+
+-les dessins de Tao
