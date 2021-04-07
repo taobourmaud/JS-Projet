@@ -10,14 +10,14 @@
     <title>Confidential</title>
 </head>
 
-<body onload="SizeDefault()">
-    <h1>DATABASE</h1>
-    <div class="result-size" id="ResultSize">
+<body onload="SizeDefault()">  <!-- On utilise le onload pour qu'à chaque fois que la page se charge, la fonction "SizeDefault" s'execute.-->
+    <h1>DATABASE</h1>           
+    <div class="result-size" id="ResultSize">       
         <label>Choose the number of the results on the page : </label>
-        <select onchange="SizePage()" name="size" id="ChooserSize">
+        <select onchange="SizePage()" name="size" id="ChooserSize">   <!-- On utilise le onchange pour qu'à chaque fois que la valeur du Select est modifier, on execute la fonction "SizePage"-->
             <option value="Infinity">All Results</option>
             <option value="10">10</option>
-            <option value="20" selected>20</option>
+            <option value="20" selected>20</option>     <!--Ce sont donc ici toutes les options possibles et l'attribut "selected" permet que la valeur afficher de base pour le selct soit 20-->
             <option value="50">50</option>
             <option value="100">100</option>
         </select>
