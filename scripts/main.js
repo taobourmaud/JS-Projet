@@ -34,31 +34,49 @@ const outputHtml = matches => {
     };
 };
 
-function test() {
+const th = document.querySelectorAll('th')
+
+for (let indexTH = 0; indexTH < th.length; indexTH++) {
+    th[indexTH].addEventListener('click', item(indexTH))
+}
+
+function item(c) {
+    return function() {
+        sort(c)
+    }
+}
+
+function sort(indexOfRow) {
     const tbody = document.querySelector('tbody');
     //const thx = document.querySelectorAll('th');
     const trxb = tbody.querySelectorAll('tr');
     let shouldSwitch, element, nextElement, index
-    let click = true
-    while (click) {
-        click = false
-        for (index = 0; index < (trxb.length - 1); index++) {
-            shouldSwitch = false
+    let tableau = new Array()
+    for (index = 0; index < (trxb.length - 1); index++) {
+        tableau.push(trxb[index].querySelectorAll("TD")[indexOfRow].innerHTML)
+        tableau.sort()
+        for(let i of trxb[index].querySelectorAll("TD")) {
+            trxb[index].querySelectorAll("TD")[indexOfRow].innerHTML = tableau[i]
 
-            element = trxb[index].getElementsByTagName("TD")[index];
-            nextElement = trxb[index + 1].getElementsByTagName("TD")[index];
-            
-            if (element.innerHTML.toLowerCase() > nextElement.innerHTML.toLowerCase()) {
-                shouldSwitch = true;
-                break;
-              }
         }
-        if (shouldSwitch) {
-            trxb[index].parentNode.insertBefore(trxb[index + 1], trxb[index]);
-            switching = true;
-          }
+        
+        /*shouldSwitch = false
+        
+        element = trxb[index].getElementsByTagName("TD")[indexOfRow];
+        nextElement = trxb[index + 1].getElementsByTagName("TD")[indexOfRow];
+            
+        if (element.innerHTML.toLowerCase() > nextElement.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+        }*/
     }
+    
+    console.log(tableau)
+    /*if (shouldSwitch) {
+    trxb[index].parentNode.insertBefore(trxb[index + 1], trxb[index]);
+    }*/
 }
+
 
 search.addEventListener('input', () => searchStates(search.value));
 
