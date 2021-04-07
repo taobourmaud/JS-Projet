@@ -55,7 +55,7 @@ function sort(indexOfRow) {
     for (index = 0; index < (trxb.length - 1); index++) {
         tableau.push(trxb[index].querySelectorAll("TD")[indexOfRow].innerHTML)
         tableau.sort()
-        for(let i of trxb[index].querySelectorAll("TD")) {
+        for(let i in trxb[index].querySelectorAll("TD")) {
             trxb[index].querySelectorAll("TD")[indexOfRow].innerHTML = tableau[i]
 
         }
