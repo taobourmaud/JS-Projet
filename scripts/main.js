@@ -34,12 +34,17 @@ const outputHtml = matches => {
     };
 };
 
+
+// Selection de toutes les en-têtes des colonnes
 const th = document.querySelectorAll('th')
 
+// On parcours les en-tête afin d'exécuter le tri sur la colonne choisie
 for (let indexTH = 0; indexTH < th.length; indexTH++) {
+    // Ajout d'un évenement lors d'un click 
     th[indexTH].addEventListener('click', item(indexTH))
 }
 
+// Retourne fonction anonyme qui exécute le tri
 function item(c) {
     return function() {
         sort(c)
@@ -47,17 +52,28 @@ function item(c) {
 }
 
 function sort(indexOfRow) {
+    // Sélection des balises html voulu
     const tbody = document.querySelector('tbody');
     const trxb = tbody.querySelectorAll('tr');
 
     let index
+
+    // Le tableau sera le résultat du tri 
     let tableau = new Array()
 
     for (index = 0; index < (trxb.length); index++) {
+        // On va pousser tout les élément de la colonne voulu dans le tableau vide
         tableau.push(trxb[index].querySelectorAll("TD")[indexOfRow].innerHTML)
 
+
         var collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+        // On tri ce table
         tableau.sort(collator.compare)
+
+        
+        for (let indexTable = 0; indexTable <= tableau.length; indexTable++) {
+            trxb[index].querySelectorAll("TD")[indexOfRow].appendChild(tableau[indexTable])
+        }
     }
     
     console.log(tableau)
