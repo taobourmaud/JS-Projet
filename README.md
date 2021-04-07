@@ -9,7 +9,7 @@ Le lien du github de notre projet : https://github.com/taobourmaud/JS-Projet
 1) [Le projet](#projet)
 2) [Son intérêt](#interet)
 3) [Son utilisation](#utilisation)
-
+4) [Ce qu'on aurait pu améliorer](#ameliorer)
 
 
 ## Le projet : <a id="projet"></a>
@@ -57,3 +57,16 @@ Et voila, vous avez maintenant toute les informations que vous désirez !
 ![image](https://media.discordapp.net/attachments/408320873876160522/829392426833412126/unknown.png?width=1440&height=140)
 
  (sauf apparement la race de Chuck Norris, que personne connait à ce jour)
+
+
+## Ce qu'on aurait pu améliorer : <a id="ameliorer"></a>
+
+Avec plus de temps, on aurait pu améliorer
+
+-notre fonction sort
+
+-la pagination (la créer pour le coup)
+
+-rajouter des personnages
+
+-les dessins de Tao
