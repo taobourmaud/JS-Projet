@@ -8,7 +8,6 @@ Le lien du github de notre projet : https://github.com/taobourmaud/JS-Projet
 
 1) [Le projet](#projet)
 2) [Son intérêt](#interet)
-2) [Son fonctionnement](#fonctionnement)
 3) [Son utilisation](#utilisation)
 
 
@@ -38,17 +37,21 @@ Cependant, il est possible que vous ne vous intéressiez pas à une personne en 
 De plus, si vous souhaitez vous préparer au combat, mais que vous avez besoin d'alliés adaptés à la situation, et bien vous pouvez faire exactement la même chose, mais en recherchant des méchants, pour ainsi travailler avec les plus efficaces d'entre eux qui ont un intérêt commun avec vous !
 
 
-## Son fonctionnement : <a id="fonctionnement"></a>
-
-Notre site est créé de manière ergonomique et simple à prendre en main. En effet, pour ne pas surcharger les personnes avec un matèriel peu performant, nous avons mis en place une selection pour changer la taille de la page comme voici ci-dessous : 
-![Page Size](static/Images/unknown.png)
-
-
 ## Son utilisation : <a id="utilisation"></a>
 
 
+Notre site est créé de manière ergonomique et simple à prendre en main.
+
 Une fois arrivé sur le site, vous pouvez comme bon vous semble monter et descendre dans la liste des super héros et vilains et connaitre leurs caractéristiques.
+![image](https://media.discordapp.net/attachments/408320873876160522/829390676121616384/unknown.png?width=1366&height=670)
 
-En revanche, si vous souhaitez faire des recherches plus ciblés, cliquez sur le bouton à droite de "Choisir le nombre de résultats sur la page :"; et sélectionnez le nombre de résultats voulus.
+En revanche, si vous souhaitez faire des recherches plus ciblés, cliquez sur le bouton à droite de "Choisir le nombre de résultats sur la page :"; et sélectionnez le nombre de résultats voulus:
+![Page Size](static/Images/unknown.png)
 
-Ensuite, taper les premières lettres (ou le nom complet) du personnage sur lequel vous souhaitez en apprendre plus.
+Ensuite, taper les premières lettres (ou le nom complet) du personnage sur lequel vous souhaitez en apprendre plus:
+![image](https://media.discordapp.net/attachments/408320873876160522/829392050461868042/image0.png)
+
+Et voila, vous avez maintenant toute les informations que vous désirez ! (sauf apparement la race de Chuck Norris, que personne connait à ce jour)
+![image](https://media.discordapp.net/attachments/408320873876160522/829392426833412126/unknown.png?width=1440&height=140)
+
+ (sauf apparement la race de Chuck Norris, que personne connait à ce jour)
