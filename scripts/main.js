@@ -82,7 +82,7 @@ let i = 1
 let temp = ""
 
 function SizePage() {    // fonction changeant la taille dès que le select est modifié.
-    sizepage = 0
+    sizepage = 0 // on redéclare ses 2 variables pour qu'à chaque fois que le Select est modifié on est pas d'erreur.
     i = 1
     const e = document.getElementById("ChooserSize");    // on récupère la valeur du select.
     sizepage = e.options[e.selectedIndex].value
@@ -90,8 +90,8 @@ function SizePage() {    // fonction changeant la taille dès que le select est 
         res.json().then(data => {
             if (data.length > 0) {
                 temp = "";
-                data.forEach((u) => {    // on parcourt data qui est le fichier JSON en gros.
-                    if (i <= sizepage) {
+                data.forEach((u) => {    // on parcourt data qui est la variables contenant le fichier JSON
+                    if (i <= sizepage) { // On va effectuer la suite seulement le nombre de fois que l'on veut, c'est à dire par rapport à ce qui est choisi pour le select.
                         i++
                         temp += "<tr>";
                         temp += "<td>" + "<img src=" + u.images.xs + ">" + "</td>";
@@ -189,7 +189,7 @@ fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then
 })
 
 // Fonction pour que la page soit de taille 20 par défault.
-
+// C'est le même principe que la fonction SizePage sauf qu'ici, les valeurs sont en brutes et pas des variables.
 function SizeDefault() {
     console.log("je refresh à chaque fois miskine")
     fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
