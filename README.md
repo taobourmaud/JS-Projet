@@ -9,6 +9,8 @@ Le lien du github de notre projet : https://github.com/taobourmaud/JS-Projet
 1) [Le projet](#projet)
 2) [Son intérêt](#interet)
 3) [Son utilisation](#utilisation)
+4) [Les détails de notre code](#detail)
+5) [La répartition du travail entre nous](#reparti)
 4) [Ce qu'on aurait pu améliorer](#ameliorer)
 
 
@@ -59,7 +61,51 @@ Et voila, vous avez maintenant toute les informations que vous désirez !
  (sauf apparement la race de Chuck Norris, que personne connait à ce jour)
 
 
+## Les détails de notre code : <a id="detail"></a>
+
+Notre code se compose en 3 parties: la partie html, la partie css, et la partie js. Les voici expliquées avec plus de détails:
+
+index.html: Ce fichier permet de donner l'apparence voulue au site 
+
+
+style.css:
+
+
+main.js: c'est le fichier qui fait fonctionner le site, et qui lui donne ses fonctionnalités, voici l'explication des fonctions qui s'y trouvent:
+
+function rand
+
+function getRandomLetter
+
+function getRandomWord
+
+function init
+
+function SizePage
+
+function SizeDefault
+
+function item
+
+function sort
+
+
+## La répartition du travail entre nous : <a id="reparti"></a>
+
+Sort: Mathis et Kevin
+
+Fetch: Mathis et Kevin
+
+Search: Tao et Elouan
+
+Display: Tao et Elouan
+
+
+
+README: Mathis
+
 ## Ce qu'on aurait pu améliorer : <a id="ameliorer"></a>
+
 
 Avec plus de temps, on aurait pu améliorer
 
