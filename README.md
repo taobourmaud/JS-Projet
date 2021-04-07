@@ -41,7 +41,7 @@ De plus, si vous souhaitez vous préparer au combat, mais que vous avez besoin d
 ## Son fonctionnement : <a id="fonctionnement"></a>
 
 Notre site est créé de manière ergonomique et simple à prendre en main. En effet, pour ne pas surcharger les personnes avec un matèriel peu performant, nous avons mis en place une selection pour changer la taille de la page comme voici ci-dessous : 
-![Page Size](static/Images/SizeChoose.PNG)
+![Page Size](static/Images/unknown.png)
 
 
 ## Son utilisation : <a id="utilisation"></a>
