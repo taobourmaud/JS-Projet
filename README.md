@@ -46,12 +46,14 @@ Une fois arrivé sur le site, vous pouvez comme bon vous semble monter et descen
 ![image](https://media.discordapp.net/attachments/408320873876160522/829390676121616384/unknown.png?width=1366&height=670)
 
 En revanche, si vous souhaitez faire des recherches plus ciblés, cliquez sur le bouton à droite de "Choisir le nombre de résultats sur la page :"; et sélectionnez le nombre de résultats voulus:
+
 ![Page Size](static/Images/unknown.png)
 
 Ensuite, taper les premières lettres (ou le nom complet) du personnage sur lequel vous souhaitez en apprendre plus:
 ![image](https://media.discordapp.net/attachments/408320873876160522/829392050461868042/image0.png)
 
-Et voila, vous avez maintenant toute les informations que vous désirez ! (sauf apparement la race de Chuck Norris, que personne connait à ce jour)
+Et voila, vous avez maintenant toute les informations que vous désirez !
+
 ![image](https://media.discordapp.net/attachments/408320873876160522/829392426833412126/unknown.png?width=1440&height=140)
 
  (sauf apparement la race de Chuck Norris, que personne connait à ce jour)
