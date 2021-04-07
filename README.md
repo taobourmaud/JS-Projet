@@ -27,7 +27,7 @@ C'est un travail de groupe dans lequel nous avons dû coder en JavaScript, en HT
 ## Son fonctionnement : <a id="fonctionnement"></a>
 
 Notre site est créé de manière ergonomique et simple à prendre en main. En effet, pour ne pas surcharger les personnes avec un matèriel peu performant, nous avons mis en place une selection pour changer la taille de la page comme voici ci-dessous : 
-![image](https://cdn.discordapp.com/attachments/408320873876160522/829029174646800454/unknown.png)
+![Page Size](static/Images/SizeChoose.PNG)
 
 ## Son utilisation : <a id="utilisation"></a>
 
