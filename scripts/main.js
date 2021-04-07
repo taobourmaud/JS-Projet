@@ -81,7 +81,7 @@ let sizepage = 0 // initialisation de 3 variables pour bien gèrer la taille des
 let i = 1
 let temp = ""
 
-function SizePage() {    // fonction changeant la taille dès que le select est modifié.
+function SizePage() { // fonction changeant la taille dès que le select est modifié.
     sizepage = 0 // on redéclare ses 2 variables pour qu'à chaque fois que le Select est modifié on est pas d'erreur.
     i = 1
     const e = document.getElementById("ChooserSize"); // on récupère la valeur du select.
@@ -90,7 +90,7 @@ function SizePage() {    // fonction changeant la taille dès que le select est 
         res.json().then(data => {
             if (data.length > 0) {
                 temp = "";
-                data.forEach((u) => {    // on parcourt data qui est la variables contenant le fichier JSON
+                data.forEach((u) => { // on parcourt data qui est la variables contenant le fichier JSON
                     if (i <= sizepage) { // On va effectuer la suite seulement le nombre de fois que l'on veut, c'est à dire par rapport à ce qui est choisi pour le select.
                         i++
                         temp += "<tr>";
@@ -158,7 +158,6 @@ const loadCharacters = async() => {
 
 loadCharacters();
 
-// SORT SYSTEM
 
 // DISPLAYING JSON DATA
 fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json').then(res => {
