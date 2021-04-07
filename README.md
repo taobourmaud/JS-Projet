@@ -1,7 +1,7 @@
 # JS-Projet
 
 
-Travail de groupe :  Tao/Elouan/Kévin/Mathis
+Travail de groupe :  Tao / Elouan / Kévin / Mathis
 
 Le lien du github de notre projet : https://github.com/taobourmaud/JS-Projet
 
@@ -63,56 +63,42 @@ Et voila, vous avez maintenant toute les informations que vous désirez !
 
 ## Les détails de notre code : <a id="detail"></a>
 
-Notre code se compose en 3 parties: la partie html, la partie css, et la partie js. Les voici expliquées avec plus de détails:
+Notre code se compose en 3 parties : la partie html, la partie css, et la partie js. Les voici expliquées avec plus de détails :
 
-index.html: Ce fichier permet de donner l'apparence voulue au site 
-
-
-style.css:
+index.html : Ce fichier permet de donner l'apparence voulue au site. 
 
 
-main.js: c'est le fichier qui fait fonctionner le site, et qui lui donne ses fonctionnalités, voici l'explication des fonctions qui s'y trouvent:
+style.css : Stylisé la page web.
 
-function rand
 
-function getRandomLetter
+main.js : 
 
-function getRandomWord
 
-function init
+* function SizePage : 
 
-function SizePage
+* function SizeDefault :
 
-function SizeDefault
+* function item : 
 
-function item
-
-function sort
+* function sort :
 
 
 ## La répartition du travail entre nous : <a id="reparti"></a>
 
-Sort: Mathis et Kevin
+Sort : Mathis et Kevin
 
-Fetch: Mathis et Kevin
+Fetch : Mathis et Kevin
 
-Search: Tao et Elouan
+Search : Tao et Elouan
 
-Display: Tao et Elouan
+Display : Tao et Elouan
 
+HTML & CSS : Kévin et Elouan
 
-
-README: Mathis
+README : Mathis
 
 ## Ce qu'on aurait pu améliorer : <a id="ameliorer"></a>
 
+* Approfondir la fonction SORT
 
-Avec plus de temps, on aurait pu améliorer
-
--notre fonction sort
-
--la pagination (la créer pour le coup)
-
--rajouter des personnages
-
--les dessins de Tao
+* Une fonction pagination
