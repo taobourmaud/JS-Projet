@@ -10,9 +10,10 @@
     <title>Confidential</title>
 </head>
 
-<body onload="SizeDefault()">  <!-- On utilise le onload pour qu'à chaque fois que la page se charge, la fonction "SizeDefault" s'execute.-->
-    <h1>DATABASE</h1>           
-    <div class="result-size" id="ResultSize">       
+<body onload="SizeDefault()">
+    <!-- On utilise le onload pour qu'à chaque fois que la page se charge, la fonction "SizeDefault" s'execute.-->
+    <h1>DATABASE</h1>
+    <div class="result-size" id="ResultSize">
         <label>Choose the number of the results on the page : </label>
         <select onchange="SizePage()" name="size" id="ChooserSize">   <!-- On utilise le onchange pour qu'à chaque fois que la valeur du Select est modifier, on execute la fonction "SizePage"-->
             <option value="Infinity">All Results</option>
@@ -24,9 +25,6 @@
     </div>
     <div class="form-group">
         <input type="text" id="search" class="form-control form-control-lg" placeholder="SEARCH BY NAME">
-    </div>
-    <div id="match-list">
-
     </div>
     <table class="table-heroes" cellpadding="0" cellspacing="0" border="0">
         <thead>

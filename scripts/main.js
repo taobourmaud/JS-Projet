@@ -73,7 +73,6 @@ word.addEventListener('mouseenter', init)
 
 // SEARCH SYSTEM
 
-const charactersList = document.getElementById('match-list');
 const searchBar = document.getElementById('search');
 let hpCharacters = [];
 
