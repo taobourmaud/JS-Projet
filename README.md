@@ -80,7 +80,7 @@ main.js :
 
 * function sort : elle permet a l'utilisateur de pouvoir ranger les résultat par ordre voulu (ordre alphabétique ou numérique de la colonne voulue)
 
-* function item : fonction qui fait fonctionner sort 
+* function item : fonction qui fait fonctionner sort en récupèrant la colonne voulu pour trier dessus.
 
 
 
