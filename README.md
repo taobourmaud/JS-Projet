@@ -97,7 +97,7 @@ Display : Tao et Elouan
 
 HTML & CSS : Kévin et Elouan
 
-README : Mathis
+README : Mathis et Tao
 
 ## Ce qu'on aurait pu améliorer : <a id="ameliorer"></a>
 
