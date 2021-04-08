@@ -74,13 +74,15 @@ style.css : Stylisé la page web.
 main.js : 
 
 
-* function SizePage : 
+* function SizeDefault : sa présence fait en sorte que le nombre de résultat affiché par défault soit toujours le même (ici 20)
 
-* function SizeDefault :
+* function SizePage : elle permet de changer le nombre de résultats affiché
 
-* function item : 
+* function sort : elle permet a l'utilisateur de pouvoir ranger les résultat par ordre voulu (ordre alphabétique ou numérique de la colonne voulue)
 
-* function sort :
+* function item : fonction qui fait fonctionner sort 
+
+
 
 
 ## La répartition du travail entre nous : <a id="reparti"></a>
